@@ -1,0 +1,115 @@
+/* Default styles for larger screens */
+
+.layout {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .space-between {
+    justify-content: space-between;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .uppercase {
+    text-transform: uppercase;
+  }
+  
+  .f-w-500 {
+    font-weight: 500;
+  }
+  
+  .f-w-600 {
+    font-weight: 600;
+  }
+  
+  .f-w-700 {
+    font-weight: 700;
+  }
+  
+  .letter-spacing2 {
+    letter-spacing: 0.2vh;
+  }
+  
+  .btn2 {
+    width: 14vh;
+  }
+  
+  .flex2 {
+    flex: 2;
+  }
+  
+  .flex3 {
+    flex: 3;
+  }
+  
+  .my-t-10 {
+    margin-top: 1vh;
+  }
+  
+  .my-t-20 {
+    margin-top: 2vh;
+  }
+  
+  .pd-t-30 {
+    padding-top: 3vh;
+  }
+  
+  .w55 {
+    width: 55%;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .pd-30 {
+    padding: 3vh;
+  }
+  
+  .portfolio-child img {
+    width: 50%;
+    height: 50%;
+  }
+ 
+  @media (max-width: 768px) {
+    .layout {
+      width: 90%;
+    }
+  
+    .w55 {
+      width: 100%; 
+    }
+  
+    .btn2 {
+      width: 100%;
+    }
+  
+    .portfolio-child img {
+      width: 100%; 
+      height: auto; 
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .layout {
+      width: 95%; 
+    }
+  }
+
+  @media (max-width: 320px) {
+    .layout {
+      width: 100%; 
+    }
+  }
+  

@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primary-color: #fff;
+    --primary-shade: #f7f5f2;
+    --seconday-color: #000;
+    --secondary-shade: #4b4c4c;
+    --red-color: #d40700;
+    --red-shade: #b20600;
+    --accent-color: #ffee63;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header section  */
+
+header{
+  
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 50, 51, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(to right, #040404, #242424, #656565);
+    color: var(--primary-color);
+}
+
+.nav-bar {
+    padding: 3vh 0;
+}
+
+span{
+    color: var(--red-color);
+}
+.rotate45{
+    width: 53%;
+    height: 50%;
+    border: 0.5vh solid red;
+    transform: rotate(-35deg);
+    position: absolute;
+    margin-left: 40%;
+}
+.abt{
+    width:50%;
+    height: 50%;
+}
+ul li a{
+    margin: 0 1vh;
+    padding: 0 0.5vh;
+    color: var(--accent-color);
+    font-size: 1.8vh;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li a::before{
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -0.5vh;
+    left: 0;
+    height: 0.2vh;
+    background-color: var(--primary-color);
+    transition: 0.6s ease;
+}
+
+ul li a:hover::before{
+    width: 100%;
+}
+
+/* button  */
+
+.btn{
+    width: 10vh;
+    height: 4vh;
+    border-radius: 0.8vh;
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6vh;
+    padding: 0 0.5vh;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background-color: var(--red-shade);
+    color: var(--primary-shade);
+    border: 0.2vh solid var(--red-color);
+}
+
+/* header content  */
+
+.content{
+    height: 90vh;
+    position: relative;
+}
+
+.content .right img{
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+
+.content .right img:hover{
+    filter: drop-shadow(16px 5px 20px burlywood);
+}
+
+h4, p{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .color-box{
+    width: 53%;
+    height: 50%;
+    border: 5px solid red;
+    transform: rotate(48deg);
+    position: absolute;
+    top: 200px;
+    right: 8px;
+} */
+
+/* about sec  */
+
+.about-me-sec{
+    min-height: 100vh;
+    background-color: var(--secondary-shade);
+    color: var(--primary-color);
+}
+
+.about-me-sec hr{
+    border: 0.2vh solid red;
+    margin-bottom: 2rem;
+}
+
+.about-content img{
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.about-content ul{
+    margin-top: 2.5vh;
+    margin-bottom: 1vh;
+}
+
+.about-content span{
+    color: #C6DCE4;
+}
+
+.dot{
+    width: 2.2vh;
+    height: 2.2vh;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1vh 0.5vh;
+    cursor: pointer;
+}
+
+.dot-w{
+    background-color: var(--primary-color);
+}
+
+.dot-b{
+    background-color: var(--seconday-color);
+}
+
+.dot-ws{
+    background-color: var(--primary-shade);
+}
+
+.dot-bs{
+    background-color: #C6DCE4;
+}
+
+.dot-a{
+    background-color: var(--accent-color);
+}
+
+/* portfolio sec  */
+
+.portfolio-sec{
+    height: 110vh;
+    background-color: burlywood;
+}
+
+.portfolio > h3{
+    color: var(--primary-color);
+    margin-bottom: 5vh;
+}
+
+.portfolio-child img{
+    width: 100%;
+}
+
+.portolio-parent{
+    gap: 3vh;
+}
+
+.portfolio-child{
+    border: 0.1vh solid var(--red-color);
+    border-radius: 0.8vh;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio-child:hover{
+    transform: scale(1.1);
+    background-color: lavender;
+}
+
+.portfolio-child h3{
+    margin-top: 1vh;
+}
+
+.portfolio-child p{
+    margin-top: 0.5vh;
+    line-height: 1.4;
+    text-align: left;
+    padding-left: 1vh;
+    padding-bottom: 1vh;
+}
+
+.portfolio-child button{
+    margin: 1.5vh;
+}
+
+/* experience sec  */
+
+.experience-sec{
+    height: 35vh;
+    background-color: var(--secondary-shade);
+    color: var(--primary-color);
+}
+
+.experience{
+    padding: 0 3vh 0 3vh;
+}
+
+.experience-details{
+    border-bottom: 0.2vh solid var(--red-color);
+    padding-bottom: 3vh;
+    margin-top: 4vh;
+}
+
+.col p{
+    padding-top: 1.4vh;
+    text-transform: uppercase;
+}
+#space{
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+
+    
+}
+/* achievement section  */
+
+.achievement-sec{
+    height: 90vh;
+    background-color: burlywood;
+}
+
+.achievement-parent{
+    min-height: 75vh;
+}
+
+.achievement-child{
+    width: 37vh;
+    height: 33vh;
+    padding: 0 2.5vh;
+    box-shadow: 0.1vh 0.2vh 1vh 0.5vh bisque;
+    border-radius: 1.2vh;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.achievement-child:nth-child(2){
+    margin-bottom: 6.5vh;
+}
+
+.achievement-child:hover{
+    margin-top: 6.5vh;
+    box-shadow: 0.5vh 0.5vh 2vh 0.5vh #f7f6e7;
+}
+
+.achievement-child img{
+    width: 25%;
+    border-radius: 50%;
+    position: relative;
+    top: -3vh;
+    left: 40%;
+}
+
+.review-sec{
+    margin-top: 4vh;
+}
+
+.review-sec .icon-sec i{
+    color: #d40700;
+}
+
+.designation{
+    color: #b20600;
+    margin-top: 0.3vh;
+}
+
+/* contact us  */
+
+.contact-us-sec{
+    background-color: darkgray;
+    height: 50vh;
+    padding: 3.5vh 0;
+}
+
+.contact-us h3{
+    color: var(--primary-color);
+}
+
+.contact-details{
+    padding-top: 4rem;
+}
+
+.contact-details h5{
+    font-size: 1.6vh;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+#email-id{
+    width: 22.6vh;
+    height: 2.8vh;
+    outline: none;
+    border: none;
+    border-radius: 0.8vh;
+    padding: 0.2vh 1.2vh;
+}
+
+.right-sec input{
+    margin-left: 1vh;
+}
+
+.right-sec button{
+    margin-left: 3.5vh;
+    margin-top: 1.5vh;
+}
+
+footer{
+    background-color: var(--secondary-shade);
+    padding: 1vh 0;
+    color: burlywood;
+}
+
+
+#click, .menu-btn i{
+    display: none;
+}
+
+
+@media (max-width:76.8vh){
+
+    .nav-bar{
+        flex-direction: column;
+        position: relative;
+        background-color: var(--secondary-shade);
+        width: 100%;
+        height: 100vh;
+       
+    }
+ .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+   
+    
+ }
+ .nav-links ul, .logo, .hire-me-btn{
+    display: none;
+ }
+
+ .color-box{
+    display: none;
+ }
+
+ .content{
+    flex-direction: column;
+    gap: 1.2vh;
+    width: 100%;
+ }
+
+ .menu-btn i{
+    display: block;
+   
+ }
+
+ .menu-btn{
+    position: absolute;
+    top: 3vh;
+    right: 1vh;
+ }
+
+
+    
+}
